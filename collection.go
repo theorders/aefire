@@ -46,6 +46,16 @@ func ToMap(v interface{}) (m map[string]interface{}) {
 	return
 }
 
+func ToStringMap(v interface{}) (m map[string]string) {
+	b, err := json.Marshal(v)
+
+	PanicIfError(err)
+
+	PanicIfError(json.Unmarshal(b, &m))
+
+	return
+}
+
 func ToJson(v interface{}, indent ...string) string {
 	var b []byte
 	var err error

@@ -12,7 +12,6 @@ require (
 	github.com/labstack/echo/v4 v4.1.11
 	github.com/labstack/gommon v0.3.0
 	github.com/lib/pq v1.0.0
-	github.com/thoas/go-funk v0.5.0
 	golang.org/x/net v0.0.0-20191209160850-c0dbc17a3553 // indirect
 	google.golang.org/api v0.13.0
 	google.golang.org/grpc v1.21.1
